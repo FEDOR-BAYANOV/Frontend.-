@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Формы</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js">
+		</script>
+		<script src="ajax.js">
+		</script>
+	</head>
+	<body>
+		<div id="rectangle">
+			<form id="ajax_form" action="" method="POST">
+				<h1>Задать вопрос
+				</h1>
+				<input type="text" name="name" placeholder="Фамилия Имя Отчество *" required class="input" 	pattern="^[А-Яа-яЁё\s\-]+$">
+				<input type="text" name="phone" placeholder="Телефон *" required class="input" pattern="^[0-9\s\-\+]+$">
+				<input type="email" name="email" placeholder="Email" class="input">
+				<button type="submit" id="btn" class="button">
+					Отправить запрос
+				</button>
+ 				<div id="result_form">
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
+
